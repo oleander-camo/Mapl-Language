@@ -1,0 +1,8 @@
+print -> string "Hello World"
+print -> number 2
+print -> number 170
+print -> string "Hi"
+print -> string "Hello World"
+print -> number 2
+print -> number 170
+print -> string "Hi"
