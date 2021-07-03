@@ -8,4 +8,4 @@ print(lexer.gen_tokens())
 parser = Parser(lexer.gen_tokens())
 parser.parse()
 
-print("Generated the AST... ")
+print("Generated the AST...")

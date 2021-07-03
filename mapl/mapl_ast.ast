@@ -1,8 +1,4 @@
-print -> string "Hello World"
-print -> number 2
-print -> number 170
-print -> string "Hi"
-print -> string "Hello World"
-print -> number 2
-print -> number 170
-print -> string "Hi"
+createvar -> var hello_world@ = string "Hello World"
+print -> var hello_world@
+createvar -> var hello_world@ = string "Hello World"
+print -> var hello_world@

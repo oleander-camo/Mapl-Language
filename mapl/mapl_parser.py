@@ -14,3 +14,9 @@ class Parser:
                 self.ast.write(f"string {tokens[t]['value']}")
             elif tokens[t]["type"] == "NUMBER":
                 self.ast.write(f"number {tokens[t]['value']}")
+            elif tokens[t]["type"] == "CREATEVAR":
+                self.ast.write("createvar -> ")
+            elif tokens[t]["type"] == "VAR":
+                self.ast.write(f"var {tokens[t]['value']}")
+            elif tokens[t]["type"] == "EQUALS":
+                self.ast.write(" = ")

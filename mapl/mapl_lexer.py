@@ -41,10 +41,19 @@ class Lexer:
                 self.tokens.append({"type": "NUMBER", "value": eval(tmpstr[1:-1])})
                 tmpstr = ""
                 tmpbool = False
-            elif char == ';':
+            elif char == ';' and not tmpbool:
                 self.tokens.append({"type": "SEMICOLON", "value": tmpstr})
                 tmpstr = ""
-            elif tmpstr == "print":
+            elif tmpstr == "print" and not tmpbool:
                 self.tokens.append({"type": "PRINT", "value": tmpstr})
+                tmpstr = ""
+            elif tmpstr == "crev" and not tmpbool:
+                self.tokens.append({"type": "CREATEVAR", "value": tmpstr})
+                tmpstr = ""
+            elif char == "@" and not tmpbool:
+                self.tokens.append({"type": "VAR", "value": tmpstr})
+                tmpstr = ""
+            elif char == "=" and not tmpbool:
+                self.tokens.append({"type": "EQUALS", "value": tmpstr})
                 tmpstr = ""
         return self.tokens

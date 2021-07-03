@@ -1,4 +1,2 @@
-print "Hello World";
-print % 1 + 1 %;
-print % ((10 + 5) * 10) + (10 + 10) %;
-print "Hi";
+crev hello_world@ = "Hello World";
+print hello_world@;
