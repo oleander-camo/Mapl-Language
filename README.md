@@ -6,6 +6,7 @@ A programming language programmed in Python (I know it sounds dumb), but I have 
 - print -- prints something to the screen
 - crev -- create variable
 - input -- returns console input
+# Variable stuff
 - variablename@ -- set variable name
 ## Data types
 - "" -- strings
