@@ -3,5 +3,7 @@ A programming language programmed in Python (I know it sounds dumb), but I have 
 
 # Syntax
 - print -- prints something to the screen
+- crev -- create variable
+- variablename@ -- set variable name
 - "" -- strings
 - %% -- numbers or expresions
