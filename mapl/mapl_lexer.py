@@ -47,6 +47,9 @@ class Lexer:
             elif tmpstr == "print" and not tmpbool:
                 self.tokens.append({"type": "PRINT", "value": tmpstr})
                 tmpstr = ""
+            elif tmpstr == "input" and not tmpbool:
+                self.tokens.append({"type": "INPUT", "value": tmpstr})
+                tmpstr = ""
             elif tmpstr == "crev" and not tmpbool:
                 self.tokens.append({"type": "CREATEVAR", "value": tmpstr})
                 tmpstr = ""

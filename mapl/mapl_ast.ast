@@ -1,4 +1,2 @@
-createvar -> var hello_world@ = string "Hello World"
-print -> var hello_world@
-createvar -> var hello_world@ = string "Hello World"
-print -> var hello_world@
+print -> input
+print -> input

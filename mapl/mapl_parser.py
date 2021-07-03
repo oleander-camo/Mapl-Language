@@ -8,6 +8,8 @@ class Parser:
         for t in range(len(tokens)):
             if tokens[t]["type"] == "PRINT":
                 self.ast.write("print -> ")
+            elif tokens[t]["type"] == "INPUT":
+                self.ast.write("input")
             elif tokens[t]["type"] == "SEMICOLON":
                 self.ast.write("\n")
             elif tokens[t]["type"] == "STRING":

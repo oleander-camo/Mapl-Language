@@ -26,10 +26,15 @@ class ASTInterpreter:
                         print(self.symbols[line[13:]])
                     else:
                         print("varible not defined")
+                elif line[9:] == "input":
+                    print(input())
                 else:
                     print(line[16:])
             elif line[0:9] == "createvar":
-                self.symbols[line[17:line.find('=')-1]] = line[line.find('=')+9:]
+                if line[line.find('=')+2:] == "input":
+                    self.symbols[line[17:line.find('=')-1]] = input()
+                else:
+                    self.symbols[line[17:line.find('=')-1]] = line[line.find('=')+9:]
             elif line[0:3] == "var":
                 if line[4:] in self.symbols:
                     self.symbols[line[4:]]
